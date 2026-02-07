@@ -97,9 +97,9 @@ function loadQuestion() {
     const currentQuestion = quizData[currentQuestionIndex];
     questionContainer.textContent = currentQuestion.question
 
-    for (let i = 0; i < currentQuestion.options.length; i++) {
+      currentQuestion.options.forEach((optionText,i) => {
         const optionButton = document.createElement ("button");
-        optionButton.textContent = currentQuestion.options[i];
+        optionButton.textContent = currentQuestion.options;
 
         optionButton.addEventListener("click", () => {if (hasSubmitted) return;
         
@@ -111,8 +111,8 @@ function loadQuestion() {
     });
 
     optionsContainer.appendChild(optionButton);
-}
-}
+})};
+
 
 function submitAnswer() {
     if (selectedIndex === null || hasSubmitted) return;

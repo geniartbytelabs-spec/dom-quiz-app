@@ -49,12 +49,12 @@ body{
     text-align: left;
 }
 
-.option button:hover {
+.options button:hover {
     background: #f7f7f7;
     border-color: #ddd;
 }
 
-.option button:disabled {
+.options button:disabled {
     cursor: not-allowed; opacity: 0.95;
 }
 
