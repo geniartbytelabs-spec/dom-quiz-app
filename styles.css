@@ -1,0 +1,130 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: min(760px, 95vw);
+    background: white;
+    padding: 24px;
+    border-radius: 32px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.20);
+}
+
+.sub{
+    color: #555; margin: 8px 0 16px;
+}
+
+.progress{
+    margin: 8px 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px 0 16px;
+}
+
+.options{
+    display: grid;
+    gap: 10px;
+}
+
+.options button{
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option button:hover {
+    background: #f7f7f7;
+    border-color: #ddd;
+}
+
+.option button:disabled {
+    cursor: not-allowed; opacity: 0.95;
+}
+
+.options button.selected,
+.options button.selected:hover{
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.15);
+    background: #3498db;
+}
+
+.correct{
+    background: #e7f7ec !important;
+    border-color: #38a169 !important; 
+}
+
+.incorrect{
+    background: #ff3030f8 !important;
+    border-color: #e53e3e !important;
+}
+
+.controls{
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.primary{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover { background: hsla(215, 100%, 82%, 0.558); }
+
+
+.primary:hover{
+    background: #3498db75;
+}
+
+.primary:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#next-button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hidden{
+    display: none;
+}
+
+.score{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 18px;
+}
